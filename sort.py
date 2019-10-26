@@ -49,7 +49,7 @@ def get_author(content):
     return out
 
 # Update these variables according to your requirement
-keyword = sys.argv[1] # the double quote will look for the exact keyword,
+keyword = 'starcraft' # the double quote will look for the exact keyword,
                                             # the simple quote will also look for similar keywords
 number_of_results = 100 # number of results to look for on Google Scholar
 save_database = True # choose if you would like to save the database to .csv
@@ -96,8 +96,8 @@ for n in range(0, number_of_results, 10):
         rank.append(rank[-1]+1)
 
 # Create a dataset and sort by the number of citations
-data = pd.DataFrame(zip(title, citations,  links), index = rank[1:], 
-                    columns=['Title', 'Citations', 'Source'])
+data = pd.DataFrame(zip(author, title, citations, year, links), index = rank[1:], 
+                    columns=['Author', 'Title', 'Citations', 'Year', 'Source'])
 data.index.name = 'Rank'
 
 data_ranked = data.sort_values('Citations', ascending=False)

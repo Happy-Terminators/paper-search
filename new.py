@@ -27,10 +27,14 @@ keyword ='starcraft'
 start_year = 2017
 end_year = 2019
 
-url = 'https://scholar.google.co.kr/scholar?start='+ str(0) +'&q='+ keyword +'&hl=ko&as_sdt=0,5&as_ylo='+str(start_year)+'&as_yhi='+str(end_year)
+url = 'https://scholar.google.co.kr/scholar?start='+ str(0) +'&q='+ keyword +'&as_ylo='+str(start_year)+'&as_yhi='+str(end_year)
 html = requests.get(url).text
 
-soup = BeautifulSoup(html,  "html.parser")
+print(html)
+
+
+'''
+soup = BeautifulSoup(html, "html.parser")
 mydivs = soup.find_all("div", class_="gs_ri")
 
 #print(mydivs[0])
@@ -47,7 +51,7 @@ try:
 except: 
     print('Could not catch title')
 
-'''
+
 for n in range(0, number_of_results, 10):    
     url = 'https://scholar.google.com/scholar?start='+str(n)+'&q='+keyword.replace(' ','+')
     page = session.get(url)
