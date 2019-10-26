@@ -1,0 +1,60 @@
+<div class="gs_r gs_or gs_scl" data-cid="UU8UCRi9c9QJ" data-did="UU8UCRi9c9QJ" data-lid="" data-rp="1">
+	<div class="gs_ggs gs_fl">
+		<div class="gs_ggsd">
+			<div class="gs_or_ggsm" ontouchstart="gs_evt_dsp(event)" tabindex="-1">
+				<a data-clk="hl=ko&amp;sa=T&amp;oi=gga&amp;ct=gga&amp;cd=1&amp;d=15308787469291638609&amp;ei=CvWzXeeRBIe-yQT46anoCA&amp;scisig=AAGBfm3r3bNzPDJo8GvOKC78kJfv5NSNHQ&amp;nossl=1" data-clk-atid="UU8UCRi9c9QJ" href="https://jeffhuang.com/Final_StarCraftSpectator_CHI11.pdf">
+					<span class="gs_ctg2">[PDF]
+					</span> jeffhuang.com
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="gs_ri">
+		<h3 class="gs_rt" ontouchstart="gs_evt_dsp(event)">
+			<a data-clk="hl=ko&amp;sa=T&amp;ct=res&amp;cd=1&amp;d=15308787469291638609&amp;ei=CvWzXeeRBIe-yQT46anoCA&amp;scisig=AAGBfm166UHJL2sTuXe5Vsjq6zEVtJP6gw&amp;nossl=1" data-clk-atid="UU8UCRi9c9QJ" href="https://dl.acm.org/citation.cfm?id=1979053" id="UU8UCRi9c9QJ">
+				<b>Starcraft
+				</b>from the stands: understanding the game spectator
+			</a>
+		</h3>
+	<div class="gs_a">
+		<a href="/citations?user=arBnRjcAAAAJ&amp;hl=ko&amp;oe=ASCII&amp;oi=sra">G Cheung
+		</a>,
+		<a href="/citations?user=o8oJ6s4AAAAJ&amp;hl=ko&amp;oe=ASCII&amp;oi=sra">J Huang
+		</a> - Proceedings of the SIGCHI Conference on Human …, 2011 - dl.acm.org
+	</div>
+	<div class="gs_rs">Video games are primarily designed for the players. However, video game spectating is also <br/>a popular activity, boosted by the rise of online video sites and major gaming tournaments. <br/>In this paper, we focus on the spectator, who is emerging as an important stakeholder in …
+	</div>
+	<div class="gs_fl">
+		<a class="gs_or_sav" href="javascript:void(0)" role="button" title="저장">
+			<svg class="gs_or_svg" viewBox="-1 0 17 16">
+				<path d="M8 11.57l3.824 2.308-1.015-4.35 3.379-2.926-4.45-.378L8 2.122 6.261 6.224l-4.449.378 3.379 2.926-1.015 4.35z">
+				</path>
+			</svg>
+		</a>
+		<a aria-controls="gs_cit" aria-haspopup="true" class="gs_or_cit gs_nph" href="javascript:void(0)" role="button" title="인용">
+			<svg class="gs_or_svg" viewBox="-1 0 17 16">
+				<path d="M1.5 3.5v5h2v.375L1.75 12.5h3L6.5 8.875V3.5zM9.5 3.5v5h2v.375L9.75 12.5h3L14.5 8.875V3.5z">
+				</path>
+			</svg>
+		</a> 
+		<a href="/scholar?cites=15308787469291638609&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=ko&amp;oe=ASCII">181회 인용
+		</a> 
+		<a href="/scholar?q=related:UU8UCRi9c9QJ:scholar.google.com/&amp;scioq=starcraft&amp;hl=ko&amp;oe=ASCII&amp;as_sdt=0,5">관련 학술자료
+		</a>
+		<a class="gs_nph" href="/scholar?cluster=15308787469291638609&amp;hl=ko&amp;oe=ASCII&amp;as_sdt=0,5">전체 8개의 버전
+		</a>
+		<a class="gs_or_mor gs_oph" href="javascript:void(0)" role="button" title="더보기">
+			<svg class="gs_or_svg" viewBox="-1 0 17 16">
+				<path d="M1.5 5.5l2-2L8 8l-4.5 4.5-2-2L4 8zM8.5 5.5l2-2L15 8l-4.5 4.5-2-2L11 8z">
+				</path>
+			</svg>
+		</a> 
+		<a class="gs_or_nvi gs_or_mor" href="javascript:void(0)" role="button" title="숨기기">
+			<svg class="gs_or_svg" viewBox="0 0 17 16">
+				<path d="M8.5 5.5l-2-2L2 8l4.5 4.5 2-2L6 8zM15.5 5.5l-2-2L9 8l4.5 4.5 2-2L13 8z">
+				</path>
+			</svg>
+		</a>
+	</div>
+</div>
+</div>
