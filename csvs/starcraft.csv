@@ -1,0 +1,21 @@
+,Title,Link,Citations,Year
+0,Starcraft ii: A new challenge for reinforcement learning,https://arxiv.org/abs/1708.04782,205,2017
+1,Could not catch title,Look manually at: https://scholar.google.co.kr/scholar?start=10&q=starcraft&as_ylo=2017&as_yhi=2019,94,0
+2,Could not catch title,Look manually at: https://scholar.google.co.kr/scholar?start=20&q=starcraft&as_ylo=2017&as_yhi=2019,69,0
+3,Learning macromanagement in starcraft from replays using deep learning,https://ieeexplore.ieee.org/abstract/document/8080430/,37,2017
+4,Multiagent bidirectionally-coordinated nets: Emergence of human-level coordination in learning to play starcraft combat games,https://arxiv.org/abs/1703.10069,30,2017
+5,Tstarbots: Defeating the cheating level builtin ai in starcraft ii in the full game,https://arxiv.org/abs/1809.07193,19,2018
+6,Continual online evolutionary planning for in-game build order adaptation in StarCraft,https://dl.acm.org/citation.cfm?id=3071210,18,2017
+7,STARDATA: A starcraft AI research dataset,https://www.aaai.org/ocs/index.php/AIIDE/AIIDE17/paper/viewPaper/15837,16,2017
+8,Starcraft micromanagement with reinforcement learning and curriculum transfer learning,https://ieeexplore.ieee.org/abstract/document/8351991/,14,2018
+9,The starcraft multi-agent challenge,https://dl.acm.org/citation.cfm?id=3332052,12,2019
+10,Cooperative reinforcement learning for multiple units combat in StarCraft,https://ieeexplore.ieee.org/abstract/document/8280949/,10,2017
+11,The current state of StarCraft AI competitions and bots,https://www.aaai.org/ocs/index.php/AIIDE/AIIDE17/paper/viewPaper/15830,10,2017
+12,On reinforcement learning for full-length game of starcraft,https://wvvw.aaai.org/ojs/index.php/AAAI/article/view/4394,9,2019
+13,Automated game balancing in Ms PacMan and StarCraft using evolutionary algorithms,https://link.springer.com/chapter/10.1007/978-3-319-55849-3_25,9,2017
+14,Sentiment analysis of player chat messaging in the video game StarCraft 2: Extending a lexicon-based model,https://www.sciencedirect.com/science/article/pii/S0950705117304240,8,2017
+15,Toward foraging for understanding of StarCraft agents: An empirical study,https://dl.acm.org/citation.cfm?id=3172946,8,2018
+16,Forward modeling for partial observation strategy games-a StarCraft defogger,http://papers.nips.cc/paper/8272-forward-modeling-for-partial-observation-strategy-games-a-starcraft-defogger,7,2018
+17,State-of-the-art and open challenges in RTS game-AI and Starcraft,https://pdfs.semanticscholar.org/ea33/b3d3ed2b7408463c2b8b031e3ddc22d1e10c.pdf,5,2017
+18,A machine learning approach to predict the winner in StarCraft based on influence maps,https://www.sciencedirect.com/science/article/pii/S1875952116300647,5,2017
+19,Knowledge-Guided Agent-Tactic-Aware Learning for StarCraft Micromanagement.,https://www.ijcai.org/proceedings/2018/0204.pdf,5,2018
