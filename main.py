@@ -13,11 +13,11 @@ total_paper = 10000
 total_page = 1000
 maximum_paper = 20
 
-result_data = pd.DataFrame(columns=['Title', 'Link', 'Citations', 'Year'])
-
 basic_dir = os.getcwd()
 
 min_cit = 0
+is_page_avaliable = True
+first_page_n = 0
 
 title = ""
 links = ""
@@ -43,7 +43,6 @@ def get_year(content):
     if not out.isdigit():
         out = 0
     return int(out)
-
 
 
 def extract(html, is_text, maximum_n, data, min_citation):
@@ -94,41 +93,63 @@ def extract(html, is_text, maximum_n, data, min_citation):
                 min_citation = data.loc[maximum_paper-1, 'Citations']
 
         if is_text:
-            source.append(str(page_n) + "~" + str(page_n * 10 - 1) + ": txt")
+            source.append(str(page_n) + "~" + str((page_n + 1)* 10 - 1) + " : txt")
+            return data, min_citation, True
         else:
-            source.append(str(page_n) + "~" + str(page_n * 10 - 1) + ": internet")
+            source.append(str(page_n) + "~" + str((page_n + 1)* 10 - 1) + " : internet")
+            return data, min_citation, True
     else:
-        source.append(str(page_n) + "~" + str(page_n * 10 - 1) + ": manual")
+        source.append(str(page_n) + "~" + str((page_n + 1)* 10 - 1) + " : manual")
+        return data, min_citation, False
 
-    return data, min_citation
+result_data = pd.DataFrame(columns=['Title', 'Link', 'Citations', 'Year'])
+csv_dir = basic_dir + "\\" +keyword + "\\" +keyword + ".csv"
+info_dir = basic_dir + "\\" +keyword + "\\info.txt"
 
+if os.path.isfile(csv_dir):
+    result_data = pd.read_csv(csv_dir)
 
+last_page = 0
 
-
-for page_n in range(0, 3):
+for page_n in range(first_page_n, 3):
     
-    file_dir = basic_dir + "\\htmls\\page" + str(page_n) + ".txt"
+    html_dir = basic_dir + "\\" +keyword +"\\htmls\\page" + str(page_n) + ".txt"
 
-    if os.path.isfile(file_dir):
-        f = open(file_dir, 'r')
+    if os.path.isfile(html_dir):
+        f = open(html_dir, 'r')
         html = f.read()
         f.close()
 
-        result_data, min_cit = extract(html, True, maximum_paper, result_data, min_cit)
+        if is_page_avaliable:
+            result_data, min_cit, is_page_avaliable = extract(html, True, maximum_paper, result_data, min_cit)
+        else:
+            last_page = page_n
+            break
     else:
         url = 'https://scholar.google.co.kr/scholar?start='+ str(page_n * 10) +'&q='+ keyword +'&as_ylo='+str(start_year)+'&as_yhi='+str(end_year)
         html = requests.get(url).text
 
-        f = open(file_dir, 'w')
+        f = open(html_dir, 'w')
         f.write(html)
         f.close()
 
-        result_data, min_cit = extract(html, False, maximum_paper, result_data, min_cit)
+        if is_page_avaliable:
+            result_data, min_cit, is_page_avaliable = extract(html, True, maximum_paper, result_data, min_cit)
+        else:
+            last_page = page_n
+            break
 
         rand_value = random.randint(1, 10)
         time.sleep(rand_value)
 
-csv_dir = basic_dir + "\\csvs\\" + keyword + ".csv"
 
 result_data.to_csv(csv_dir, encoding='utf-8')
+
+f = open(info_dir, 'w')
+f.write("This table searched " +str(last_page * 10)+" pages\n")
+for info in source:
+    f.write(info+"\n")
+f.close()
+
+
 print(source)
